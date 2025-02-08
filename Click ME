@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disco GIF + Music Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            animation: discoBackground 1s infinite;
+        }
+        @keyframes discoBackground {
+            0% { background-color: red; }
+            25% { background-color: blue; }
+            50% { background-color: green; }
+            75% { background-color: yellow; }
+            100% { background-color: purple; }
+        }
+        .gif-container {
+            text-align: center;
+        }
+        audio {
+            display: none; /* Hide the audio player */
+        }
+    </style>
+</head>
+<body>
+    <!-- Fixed GIF URL -->
+    <div class="gif-container">
+        <img src="https://media.giphy.com/media/zINs6k7lwfawSbLOIc/giphy.gif" alt="Cool GIF" width="500">
+    </div>
+
+    <!-- Replace the song URL with a working one -->
+    <audio autoplay loop>
+        <source src="YOUR_FIXED_SONG_URL.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
